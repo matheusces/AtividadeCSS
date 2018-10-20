@@ -1,0 +1,18 @@
+body{
+	background-color: rgb(0,180,255);
+}
+h1, h3{
+	color: black;
+	background-color: rgb(0,255,255);
+}
+
+h1{
+	margin: 50px;
+	text-align: center;
+	font-family: sans-serif;
+}
+p{
+	background-color: rgb(0,255,255);
+	color: green;
+	font-family: verdana;
+}

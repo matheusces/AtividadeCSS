@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC>
+<html>
+    <head>
+    	<title>Atividade CSS</title>
+    	<meta charset="utf-8">
+        <link href="CSS/fonte.css" rel="stylesheet">
+
+
+        <link rel="stylesheet" type="text/css" href="CSS/CSS.css">
+    </head>
+    <body>
+        <header>
+        	<h1>Atividade CSS</h1>
+        </header>
+        
+        <main>
+            <h3>a) É  possível  sobrepor  à  aparência(estilo) definida  em  regras  CSS  anteriores, mais  genéricas,  por  regras  mais  específicas?  Se  possível,  essa  técnica  tem nome? Exemplifique</h3>
+            <p>
+                Sim, seu nome é <u>override</u>.
+          		
+	            <div style="background-color: rgb(0,255,255); color: green">
+	            	<code>
+		            	<div>h1, h2, h3{</div>	
+		               		<div style="margin-left: 10px">color: black;</div>
+		                }
+		                <div>h1{</div>
+		                	<div style="margin-left: 10px">color: red;</div>
+		            	}	
+	            	</code>
+	            </div>
+
+            	<p>As características definidas para h1 primeiramente viraram mais específicas, portanto o seletor <u>mais específico que vai definir sua aparência.</u></p>
+        	</p>
+            
+            
+            <h3>b) Caso definíssemos uma regra CSS mais geral para cabeçalhos de nível 1, 2 e 3,  seguida  de  outra  somente  para  o  nível  1,  como  seria  o  comportamento  do navegador?  Descreva  os  vários  cenários  possíveis  e  o  comportamento  do navegador em cada uma delas.</h3>
+            <p>
+                Se usássemos uma regra geral para o cabeçalho do tipo 1, 2 e 3 como por exemplo padronizar a cor fonte como preto e depois criássemos uma regra específica para o cabeçalho de tipo 1, <u>definindo a cor como vermelho</u>, o navegador reagiria exibindo o cabeçalho de tipo 1 na cor vermelha e os do tipo 2 e 3 na cor preta.
+            </p>
+            
+            <h3>c) É sempre interessante otimizar o código CSS? Cite algumas vantagens.</h3>
+            <p> economia no tráfego do servidor, <u>reutilização de codigo</u>, flexibilidade para a utização  de outras mídias.</p>
+            
+            <h3>d) Defina herança em CSS. Utilize, também, imagens para ilustrar tais definições.</h3>
+            <p>
+                O que for definido como propriedade no pai será <u>repassado</u> para todos os seus filhos e até seus netos, sendo isso uma <u>regra explícita</u> para todos.
+			</p>
+				        
+            <img style="margin-left: 50px" src="Imagem/foto.png"/>            
+            
+    
+
+            <h3>e) Podemos    sobrescrever    características    herdadas    todas    as    vezes    que desejarmos deixá-la mais específica?</h3>
+            <p>
+            	Sim, todos os elementos que herdarem características definidas anteriormente são <u>sobescritos</u> com uma regra CSS mais específica.		
+            </p>
+        </main>
+        
+        <footer>
+        
+        </footer>
+    </body>
+</html>
